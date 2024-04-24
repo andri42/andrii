@@ -23,8 +23,8 @@ module.exports.chatWithUser = function chatWithUser (req, res, next, body, useri
     });
 };
 
-module.exports.create Trip = function create Trip (req, res, next, body, userid) {
-  User.create Trip(body, userid)
+module.exports.createTrip = function createTrip (req, res, next, body, userid) {
+  User.createTrip(body, userid)
     .then(function (response) {
       utils.writeJson(res, response);
     })
@@ -63,8 +63,8 @@ module.exports.getNotification = function getNotification (req, res, next, useri
     });
 };
 
-module.exports.personal details = function personal details (req, res, next, body, userid) {
-  User.personal details(body, userid)
+module.exports.personaldetails = function personaldetails (req, res, next, body, userid) {
+  User.personaldetails(body, userid)
     .then(function (response) {
       utils.writeJson(res, response);
     })
